@@ -1,0 +1,15 @@
+<label class="todo-container">
+  <input
+    type="checkbox"
+    [checked]="todo.isCompleted"
+    (change)="onCheckedChange($event)"
+  >
+  <span
+    class="todo-title"
+  >
+    {{ todo.title }}
+  </span>
+
+
+  <button>x</button>
+</label>
